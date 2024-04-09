@@ -14,14 +14,6 @@ document.addEventListener("DOMContentLoaded", function() {
             handleSearch();
         }
     });
-
-    document.addEventListener("click", function(event) {
-        const searchInput = document.getElementById("search-input");
-        if (!event.target.matches("#search-input")) {
-            searchInput.value = ""; // Clear search input field when clicked outside of it
-            handleSearch(); // Handle search to display all holidays again
-        }
-    });
 });
 
 function fetchBankHolidays() {
