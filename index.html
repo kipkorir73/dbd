@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>UK Bank Holidays</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <div id="background-image"></div>
+
+    <div class="content">
+        <header>
+            <h1>UK Bank Holidays</h1>
+            <div id="search-container">
+                <input type="text" id="search-input" placeholder="Search by title or date">
+                <button id="search-button">Search</button>
+            </div>
+        </header>
+
+        <section id="upcoming-holidays">
+            <h2>Upcoming Holidays</h2>
+            <ul id="holidays-list"></ul>
+        </section>
+
+        <section id="holiday-details-section">
+            <h2>Holiday Details</h2>
+            <div id="holiday-details"></div>
+        </section>
+    </div>
+
+    <script src="./src/index.js"></script>
 </body>
 </html>

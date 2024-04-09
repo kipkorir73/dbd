@@ -1,0 +1,87 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox for layout */
+}
+
+#background-image {
+    background-image: url(/Flag-of-the-United-Kingdom.jpg);
+    background-size: contain; /* Fit the entire image within the div */
+    background-position: left; /* Position the image to the left */
+    width: 50%; /* Occupy half of the width */
+    height: 100vh; /* Full height of the viewport */
+}
+
+.content {
+    width: 50%; /* Occupy the remaining half of the width */
+    padding: 20px;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: red;
+    margin: 0;
+}
+
+#search-container {
+    margin-top: 20px;
+}
+
+#search-input {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+#search-button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #0056b3;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+#holidays-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#holidays-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#holidays-list li:hover {
+    background-color: #e9e9e9;
+}
+
+#holiday-details {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
