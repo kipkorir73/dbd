@@ -8,7 +8,7 @@ body {
 }
 
 #background-image {
-    background-image: url(/Flag-of-the-United-Kingdom.jpg);
+    background-image: url(/UKFlag.jpg);
     background-size: contain; /* Fit the entire image within the div */
     background-position: left; /* Position the image to the left */
     width: 50%; /* Occupy half of the width */
