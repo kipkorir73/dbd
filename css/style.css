@@ -7,8 +7,8 @@ body {
 
 #background-image {
     background-image: url(/UKFlag.jpg);
-    background-repeat: no-repeat; /* Prevent repeating the image */
-    background-size: cover; /* Cover the entire container with the background image */
+    background-repeat: repeat-y; /* Repeat the image vertically */
+    background-size: contain; /* Fit the entire image within the div */
     background-position: left top; /* Position the image at the top left corner */
     width: 50%; /* Occupy half of the width */
     height: 100vh; /* Full height of the viewport */
@@ -20,20 +20,12 @@ body {
     padding: 20px;
     display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Arrange items vertically */
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
 }
 
-header {
-    text-align: center; /* Center-align the title and search bar */
-    background-color: #f0f0f0; /* Background color for the header */
+#uk-holidays {
+    text-align: center; /* Center-align the title "UK Holidays" */
+    background-color: #f0f0f0; /* Background color for the title section */
     padding: 20px; /* Add padding */
-    margin-bottom: 20px; /* Add margin to separate from the background image */
-}
-
-h1 {
-    color: red;
-    margin: 0;
 }
 
 #search-container {
