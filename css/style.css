@@ -37,6 +37,7 @@ body {
     display: flex; /* Use flexbox for layout */
     align-items: center; /* Center items vertically */
     margin-top: 20px; /* Add margin to the search container */
+    justify-content: flex-end; /* Align items to the right */
 }
 
 #search-input {
@@ -61,4 +62,6 @@ body {
 
 #upcoming-holidays {
     margin-top: 20px; /* Add margin to the "Upcoming Holidays" section */
+    align-self: flex-end; /* Align to the right */
+    text-align: right; /* Align text to the right */
 }
