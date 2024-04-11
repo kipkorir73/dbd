@@ -20,7 +20,6 @@ body {
     z-index: -1; /* Move the background behind other content */
 }
 
-
 .content {
     width: 50%; /* Occupy the remaining half of the width */
     padding: 20px;
