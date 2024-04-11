@@ -10,7 +10,7 @@ body {
     background-repeat: repeat-y; /* Repeat the image vertically */
     background-size: contain; /* Fit the entire image within the div */
     background-position: left top; /* Position the image at the top left corner */
-    width: 20%; /* Occupy 20% of the width */
+    width: 50%; /* Occupy half of the width */
     height: 100vh; /* Full height of the viewport */
     position: fixed; /* Fixed position to remain visible while scrolling */
     top: 0; /* Position at the top of the viewport */
@@ -19,11 +19,12 @@ body {
 }
 
 .content {
-    width: 80%; /* Occupy the remaining 80% of the width */
+    width: 50%; /* Occupy half of the width */
     padding: 20px;
-    margin-left: 20%; /* Add margin to keep content away from the background */
     display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Arrange items vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
 }
 
 #uk-holidays {
