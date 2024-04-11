@@ -1,3 +1,4 @@
+/* Set base styles for the body */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,8 +6,9 @@ body {
     display: flex; /* Use flexbox for layout */
 }
 
+/* Styles for the background image */
 #background-image {
-    background-image: url(/UKFlag.jpg);
+    background-image: url(/UKFlag.jpg); /* Set background image */
     background-repeat: repeat-y; /* Repeat the image vertically */
     background-size: contain; /* Fit the entire image within the div */
     background-position: left top; /* Position the image at the top left corner */
@@ -18,26 +20,30 @@ body {
     z-index: -1; /* Move the background behind other content */
 }
 
+/* Styles for the main content container */
 .content {
     width: 50%; /* Occupy half of the width */
-    padding: 20px;
+    padding: 20px; /* Add padding */
     display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Arrange items vertically */
     margin-left: 50%; /* Ensure content starts after the background image */
 }
 
+/* Styles for the title "UK Holidays" */
 #uk-holidays {
     text-align: center; /* Center-align the title "UK Holidays" */
     background-color: #f0f0f0; /* Background color for the title section */
     padding: 20px; /* Add padding */
 }
 
+/* Styles for the search container */
 #search-container {
     display: flex; /* Use flexbox for layout */
     align-items: center; /* Center items vertically */
     margin-top: 20px; /* Add margin to the search container */
 }
 
+/* Styles for the search input field */
 #search-input {
     padding: 8px;
     border-radius: 4px;
@@ -45,6 +51,7 @@ body {
     margin-right: 10px;
 }
 
+/* Styles for the search button */
 #search-button {
     padding: 8px 16px;
     border-radius: 4px;
@@ -54,10 +61,12 @@ body {
     cursor: pointer;
 }
 
+/* Hover styles for the search button */
 #search-button:hover {
     background-color: #0056b3;
 }
 
+/* Styles for the "Upcoming Holidays" section */
 #upcoming-holidays {
     margin-top: 20px; /* Add margin to the "Upcoming Holidays" section */
 }
