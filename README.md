@@ -3,8 +3,15 @@
 #### Date, 2024/04/11
 
 #### By *Brenda Cheptoo*
-## Description
 
+## Description
+This project entails developing a web application or a webpage displaying information about the UK holidays, i.e name of the holiday, date and whether it's marked as a bunting day(a ay off work).
+
+The Javascript file fetches the UK bank holiday data from the UK government's bank holidays API using the URL "https://www.gov.uk/bank-holidays.json".
+
+The webpage loads the upcoming bank holidays data when it is opened. The users can search for specific holidays by title or date using the search bar and the list updates to display the matcing results.
+
+The users can also remove holidays from the list by clicking the delete button and they can also edit the details of the bank holidays by clicking the edit button.
 
 ## Installation
 To download the document in GitHub, use git clone.
