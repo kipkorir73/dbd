@@ -19,10 +19,10 @@ body {
     left: 0; /* Position at the left of the viewport */
     z-index: -1; /* Move the background behind other content */
 }
-
 .content {
-    width: 50%; /* Occupy the remaining half of the width */
+    width: 80%; /* Occupy the remaining 80% of the width */
     padding: 20px;
+    margin-left: 20%; /* Add margin to keep content away from the background */
 }
 
 header {
