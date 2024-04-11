@@ -73,14 +73,17 @@ h2 {
     padding: 0;
 }
 
-#holidays-list li {
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-radius: 4px;
-    cursor: pointer;
+#holidays-list {
+    position: fixed; /* Fix the holidays list position */
+    top: 0; /* Position at the top of the viewport */
+    right: 0; /* Position at the right of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    overflow-y: auto; /* Add vertical scroll if needed */
+    width: 20%; /* Adjust the width of the holidays list */
+    background-color: #ffffff; /* Background color for holidays list */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Add box shadow for visual effect */
+    z-index: 100; /* Ensure the holidays list appears above other content */
 }
-
 #holidays-list li:hover {
     background-color: #e9e9e9;
 }
