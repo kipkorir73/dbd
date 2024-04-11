@@ -17,11 +17,13 @@ body {
     left: 0; /* Position at the left of the viewport */
     z-index: -1; /* Move the background behind other content */
 }
+
 .content {
     width: 50%; /* Occupy half of the width */
     padding: 20px;
     display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Arrange items vertically */
+    margin-left: 50%; /* Ensure content starts after the background image */
 }
 
 #uk-holidays {
