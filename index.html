@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character set and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
     <title>UK Bank Holidays</title>
+    <!-- Link to external stylesheet -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <!-- Background image container -->
     <div id="background-image"></div>
 
+    <!-- Main content container -->
     <div class="content">
+        <!-- Header section -->
         <header>
+            <!-- Title of the webpage -->
             <h1>UK Bank Holidays</h1>
+            <!-- Search container with input field and search button -->
             <div id="search-container">
                 <input type="text" id="search-input" placeholder="Search by title or date">
                 <button id="search-button">Search</button>
             </div>
         </header>
 
+        <!-- Section for displaying upcoming holidays -->
         <section id="upcoming-holidays">
+            <!-- Subtitle for upcoming holidays -->
             <h2>Upcoming Holidays</h2>
+            <!-- Unordered list to contain holiday items -->
             <ul id="holidays-list"></ul>
         </section>
     </div>
 
+    <!-- JavaScript file to add interactivity -->
     <script src="./src/index.js"></script>
 </body>
 </html>
