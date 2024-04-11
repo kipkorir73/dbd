@@ -7,14 +7,11 @@ body {
 
 #background-image {
     background-image: url(/UKFlag.jpg);
-    background-repeat: repeat-y; /* Repeat the image vertically */
-    background-size: contain; /* Fit the entire image within the div */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    background-size: cover; /* Cover the entire container with the background image */
     background-position: left top; /* Position the image at the top left corner */
     width: 50%; /* Occupy half of the width */
     height: 100vh; /* Full height of the viewport */
-    position: fixed; /* Fixed position to remain visible while scrolling */
-    top: 0; /* Position at the top of the viewport */
-    left: 0; /* Position at the left of the viewport */
     z-index: -1; /* Move the background behind other content */
 }
 
@@ -27,17 +24,22 @@ body {
     align-items: center; /* Center content horizontally */
 }
 
-#uk-holidays {
-    text-align: center; /* Center-align the title "UK Holidays" */
-    background-color: #f0f0f0; /* Background color for the title section */
+header {
+    text-align: center; /* Center-align the title and search bar */
+    background-color: #f0f0f0; /* Background color for the header */
     padding: 20px; /* Add padding */
+    margin-bottom: 20px; /* Add margin to separate from the background image */
+}
+
+h1 {
+    color: red;
+    margin: 0;
 }
 
 #search-container {
     display: flex; /* Use flexbox for layout */
     align-items: center; /* Center items vertically */
     margin-top: 20px; /* Add margin to the search container */
-    justify-content: flex-end; /* Align items to the right */
 }
 
 #search-input {
@@ -62,6 +64,4 @@ body {
 
 #upcoming-holidays {
     margin-top: 20px; /* Add margin to the "Upcoming Holidays" section */
-    align-self: flex-end; /* Align to the right */
-    text-align: right; /* Align text to the right */
 }
