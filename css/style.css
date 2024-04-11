@@ -1,5 +1,3 @@
-/* style.css */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -19,25 +17,25 @@ body {
     left: 0; /* Position at the left of the viewport */
     z-index: -1; /* Move the background behind other content */
 }
+
 .content {
     width: 80%; /* Occupy the remaining 80% of the width */
     padding: 20px;
     margin-left: 20%; /* Add margin to keep content away from the background */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items vertically */
 }
 
-header {
-    background-color: #f0f0f0;
-    padding: 20px;
-    text-align: center;
-}
-
-h1 {
-    color: red;
-    margin: 0;
+#uk-holidays {
+    text-align: center; /* Center-align the title "UK Holidays" */
+    background-color: #f0f0f0; /* Background color for the title section */
+    padding: 20px; /* Add padding */
 }
 
 #search-container {
-    margin-top: 20px;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    margin-top: 20px; /* Add margin to the search container */
 }
 
 #search-input {
@@ -60,36 +58,6 @@ h1 {
     background-color: #0056b3;
 }
 
-section {
-    padding: 20px;
-}
-
-h2 {
-    margin-top: 0;
-}
-
-#holidays-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-#holidays-list {
-    position: fixed; /* Fix the holidays list position */
-    top: 0; /* Position at the top of the viewport */
-    right: 0; /* Position at the right of the viewport */
-    height: 100vh; /* Full height of the viewport */
-    overflow-y: auto; /* Add vertical scroll if needed */
-    width: 20%; /* Adjust the width of the holidays list */
-    background-color: #ffffff; /* Background color for holidays list */
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Add box shadow for visual effect */
-    z-index: 100; /* Ensure the holidays list appears above other content */
-}
-#holidays-list li:hover {
-    background-color: #e9e9e9;
-}
-
-#holiday-details {
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-radius: 4px;
+#upcoming-holidays {
+    margin-top: 20px; /* Add margin to the "Upcoming Holidays" section */
 }
