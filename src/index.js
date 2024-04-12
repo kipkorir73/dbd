@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Fetch bank holidays data from an external API
     fetchBankHolidays();
 
-    // Event listener for the search button click
+    // Event listener for search button click
     document.getElementById("search-button").addEventListener("click", function(event) {
         event.preventDefault();
         handleSearch();
