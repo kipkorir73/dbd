@@ -1,57 +1,60 @@
-/* Set base styles for the body */
+/* Base styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex; /* Use flexbox for layout */
 }
 
-/* Styles for the background image */
-#background-image {
-    background-image: url(/UKFlag.jpg); /* Set background image */
-    background-repeat: repeat-y; /* Repeat the image vertically */
-    background-size: contain; /* Fit the entire image within the div */
-    background-position: left top; /* Position the image at the top left corner */
-    width: 50%; /* Occupy half of the width */
-    height: 100vh; /* Full height of the viewport */
-    position: fixed; /* Fixed position to remain visible while scrolling */
-    top: 0; /* Position at the top of the viewport */
-    left: 0; /* Position at the left of the viewport */
-    z-index: -1; /* Move the background behind other content */
+/* Navigation bar styles */
+nav {
+    background-color: #007bff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Aligns items to the beginning and the end of the flex container */
+    align-items: center; /* Vertically center the items */
 }
 
-/* Styles for the main content container */
-.content {
-    width: 50%; /* Occupy half of the width */
-    padding: 20px; /* Add padding */
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Arrange items vertically */
-    margin-left: 50%; /* Ensure content starts after the background image */
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
 }
 
-/* Styles for the title "UK Holidays" */
-#uk-holidays {
-    text-align: center; /* Center-align the title "UK Holidays" */
-    background-color: #f0f0f0; /* Background color for the title section */
-    padding: 20px; /* Add padding */
+.nav-links {
+    list-style: none;
+    display: flex;
 }
 
-/* Styles for the search container */
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Search area styles */
 #search-container {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center items vertically */
-    margin-top: 20px; /* Add margin to the search container */
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 60px; /* Adjusted top value to be below the navigation bar */
+    z-index: 1000;
 }
 
-/* Styles for the search input field */
 #search-input {
     padding: 8px;
     border-radius: 4px;
     border: 1px solid #ccc;
     margin-right: 10px;
+    width: 60%;
 }
 
-/* Styles for the search button */
 #search-button {
     padding: 8px 16px;
     border-radius: 4px;
@@ -61,12 +64,28 @@ body {
     cursor: pointer;
 }
 
-/* Hover styles for the search button */
 #search-button:hover {
     background-color: #0056b3;
 }
 
-/* Styles for the "Upcoming Holidays" section */
-#upcoming-holidays {
-    margin-top: 20px; /* Add margin to the "Upcoming Holidays" section */
+/* Content styles */
+.content {
+    padding: 20px;
+}
+
+#holidays-list {
+    list-style: none;
+    padding: 0;
+}
+
+.holiday-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.holiday-card h3 {
+    margin-top: 0;
 }

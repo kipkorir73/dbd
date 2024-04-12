@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta tags for character set and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title of the webpage -->
     <title>UK Bank Holidays</title>
-    <!-- Link to external stylesheet -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <!-- Background image container -->
-    <div id="background-image"></div>
+    <!-- Navigation bar -->
+    <nav>
+        <div class="logo">UK Bank Holidays</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
-    <!-- Main content container -->
+    <!-- Search area -->
+    <div id="search-container">
+        <input type="text" id="search-input" placeholder="Search by title or date">
+        <button id="search-button">Search</button>
+    </div>
+
+    <!-- Content -->
     <div class="content">
-        <!-- Header section -->
-        <header>
-            <!-- Title of the webpage -->
-            <h1>UK Bank Holidays</h1>
-            <!-- Search container with input field and search button -->
-            <div id="search-container">
-                <input type="text" id="search-input" placeholder="Search by title or date">
-                <button id="search-button">Search</button>
-            </div>
-        </header>
+        <div id="no-results-message" style="display: none; text-align: center; margin-bottom: 10px;">No results found.</div>
+        <ul id="holidays-list"></ul>
+    </div>
 
-        <!-- Section for displaying upcoming holidays -->
-        <section id="upcoming-holidays">
-            <!-- Subtitle for upcoming holidays -->
-            <h2>Upcoming Holidays</h2>
-            <!-- Unordered list to contain holiday items -->
-            <ul id="holidays-list"></ul>
-        </section>
+    <!-- Confirmation dialog -->
+    <div id="confirmation-dialog" style="display: none;">
+        <div class="dialog-box">
+            <p>Are you sure you want to delete this holiday?</p>
+            <button id="confirm-delete">Yes</button>
+            <button id="cancel-delete">No</button>
+        </div>
     </div>
 
     <!-- JavaScript file to add interactivity -->
