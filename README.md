@@ -11,7 +11,7 @@ The Javascript file fetches the UK bank holiday data from the UK government's ba
 
 The webpage loads the upcoming bank holidays data when it is opened. The users can search for specific holidays by title or date using the search bar and the list updates to display the matcing results.
 
-The users can also remove holidays from the list by clicking the delete button and they can also edit the details of the bank holidays by clicking the edit button.
+The users can also remove holidays from the list by clicking the delete button and they can also edit the details of the bank holidays by clicking the edit button. This enables users to update to the current details of bank holidays.
 
 ## Installation
 To download the document in GitHub, use git clone.
